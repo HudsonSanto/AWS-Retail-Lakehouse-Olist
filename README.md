@@ -369,7 +369,7 @@ Resultado:
 | Valor do frete | 2.251.909,54 | 2.251.909,54 | Confere |
 | Valor pago | 16.008.872,12 | 16.008.872,12 | Confere |
 
-![Validação da tabela Gold](docs/img/01_validacao_gold.png)
+![Validação da tabela Gold](img/01_validacao_gold.png)
 
 ---
 
@@ -441,7 +441,7 @@ Foram encontrados 303 pedidos em que a diferença absoluta entre o valor pago e 
 - maior diferença: 182,81;
 - soma líquida das diferenças: 2.871,06.
 
-![Sentido das diferenças de pagamento](docs/img/03a_diferenca_sentido.png)
+![Sentido das diferenças de pagamento](img/03a_diferenca_sentido.png)
 
 ### Parcelado × à vista
 
@@ -454,7 +454,7 @@ A frequência de diferenças foi mais de sete vezes maior entre os pedidos parce
 
 O resultado é consistente com a possibilidade de acréscimos relacionados ao parcelamento. Entretanto, a base não disponibiliza uma regra de juros que permita confirmar essa hipótese.
 
-![Comparação entre parcelado e à vista](docs/img/03b_diferenca_parcelamento.png)
+![Comparação entre parcelado e à vista](img/03b_diferenca_parcelamento.png)
 
 ### Diferença por tipo de pagamento
 
