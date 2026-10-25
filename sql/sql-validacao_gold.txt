@@ -1,0 +1,29 @@
+-- 1) Reconciliação da gold_pedidos
+-- Esperado: 99441, 99441, 775, 1, 23 | 13591643.70, 2251909.54, 16008872.12
+SELECT
+    COUNT(*)                                                   AS total_pedidos,
+    COUNT(DISTINCT order_id)                                   AS pedidos_distintos,
+    SUM(CASE WHEN dq_sem_itens THEN 1 ELSE 0 END)              AS sem_itens,
+    SUM(CASE WHEN dq_sem_pagamento THEN 1 ELSE 0 END)          AS sem_pagamento,
+    SUM(CASE WHEN dq_alerta_datas_delivered THEN 1 ELSE 0 END) AS alerta_datas,
+    SUM(valor_itens)                                           AS valor_itens,
+    SUM(valor_frete)                                           AS valor_frete,
+    SUM(valor_pago)                                            AS valor_pago
+FROM olist_gold.gold_pedidos;
+
+-- 2) Somas na Silver, para comparar com a Gold
+SELECT
+    SUM(price)         AS valor_itens,
+    SUM(freight_value) AS valor_frete
+FROM olist.order_items;
+
+SELECT SUM(payment_value) AS valor_pago
+FROM olist.order_payments;
+
+-- 3) A gold_vendas_mensal fecha com a gold_pedidos
+SELECT
+    SUM(qtd_pedidos) AS pedidos,
+    SUM(valor_itens) AS valor_itens,
+    SUM(valor_frete) AS valor_frete,
+    SUM(valor_pago)  AS valor_pago
+FROM olist_gold.gold_vendas_mensal;
