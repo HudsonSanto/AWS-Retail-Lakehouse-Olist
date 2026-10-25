@@ -678,13 +678,6 @@ As decisões técnicas e alternativas avaliadas estão documentadas em:
 
 Analista de BI com foco em Engenharia de Dados, Analytics Engineering e soluções de dados em nuvem.
 
-- LinkedIn: https://www.linkedin.com/
-- GitHub: https://github.com/
+- LinkedIn: https://www.linkedin.com/in/hudson-santos-513230218/
 
----
 
-## Licença
-
-O código deste projeto pode ser disponibilizado sob a licença MIT.
-
-A licença do repositório cobre somente o código desenvolvido no projeto. Os dados da Olist permanecem sujeitos aos termos definidos pela fonte original.
