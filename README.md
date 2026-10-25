@@ -467,7 +467,7 @@ O resultado é consistente com a possibilidade de acréscimos relacionados ao pa
 
 Um pedido pode utilizar mais de um tipo de pagamento. Por isso, as linhas não devem ser somadas como se representassem pedidos exclusivos.
 
-![Diferença por tipo de pagamento](docs/img/03c_diferenca_tipo_pagamento.png)
+![Diferença por tipo de pagamento](img/03c_diferenca_tipo_pagamento.png)
 
 ---
 
@@ -481,7 +481,7 @@ A tabela `gold_vendas_mensal` foi utilizada para analisar:
 - participação do frete;
 - percentual de entregas com atraso.
 
-![Evolução mensal dos pedidos entregues](docs/img/02_evolucao_mensal.png)
+![Evolução mensal dos pedidos entregues](img/02_evolucao_mensal.png)
 
 Os meses com volume muito baixo podem apresentar percentuais extremos.
 
@@ -549,14 +549,14 @@ aws-retail-lakehouse/
 │   └── diagnostico_diferenca_pagamento.sql
 │
 └── docs/
-    ├── data_dictionary.md
-    ├── decisions.md
-    └── img/
-        ├── 01_validacao_gold.png
-        ├── 02_evolucao_mensal.png
-        ├── 03a_diferenca_sentido.png
-        ├── 03b_diferenca_parcelamento.png
-        └── 03c_diferenca_tipo_pagamento.png
+|    ├── data_dictionary.md
+|    ├── decisions.md
+── img/
+     ├── 01_validacao_gold.png
+     ├── 02_evolucao_mensal.png
+     ├── 03a_diferenca_sentido.png
+     ├── 03b_diferenca_parcelamento.png
+     └── 03c_diferenca_tipo_pagamento.png
 ```
 
 ---
